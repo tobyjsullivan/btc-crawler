@@ -1,0 +1,15 @@
+#!/bin/sh
+
+SCORE=0
+while URL=$(node generate-and-check.js | tee -a addresses.txt | tail -n 1)
+do
+	echo "$URL"
+	BALANCE=$(curl -s $URL | grep final_balance | grep -e "[0-9\.]*\sBTC" -o)
+	echo $BALANCE
+	if [ "$BALANCE" != "0 BTC" ]
+	then
+		((SCORE=SCORE+1))
+	fi
+	echo $SCORE
+done
+

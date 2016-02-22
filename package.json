@@ -1,0 +1,19 @@
+{
+  "name": "bitcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate-and-check.js",
+  "dependencies": {
+    "bitcoinjs-lib": "^2.2.0",
+    "bs58": "^3.0.0",
+    "curl": "^0.1.4",
+    "open": "^0.0.5",
+    "sha256": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

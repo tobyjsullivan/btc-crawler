@@ -1,5 +1,5 @@
 # btc-crawler
-Simple script crawls randomly searching for bitcoin.
+Simple crawler randomly searches for bitcoin.
 
 ## Setup
 
